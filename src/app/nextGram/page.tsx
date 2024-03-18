@@ -6,12 +6,8 @@ export default function Page() {
   return (
     <section className="cards-container">
       {photos.map((id) => (
-        <Link
-          className="card"
-          key={id}
-          href={`/nextGram/photos/${id}`}
-          passHref>
-          {id}
+        <Link className="card" key={id} href={`/nextGram/${id}`} passHref>
+          Link {id}
         </Link>
       ))}
     </section>
